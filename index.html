@@ -1,71 +1,12 @@
-<!DOCTYPE html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ucapan Ultah</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      background: linear-gradient(to bottom right, #fdf0f3, #d2eaff);
-      overflow: hidden;
-    }
-
-    .container {
-      text-align: center;
-      padding: 50px;
-      transition: all 0.8s ease-in-out;
-    }
-
-    h1 {
-      color: #ff69b4;
-      font-size: 3em;
-      animation: pop 1s ease forwards;
-    }
-
-    button {
-      padding: 10px 20px;
-      font-size: 1.2em;
-      background-color: #ffa5d8;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #ff7abb;
-    }
-
-    .second-page {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      animation: fadeIn 1s ease-in-out;
-    }
-
-    .second-page img {
-      width: 300px;
-      border-radius: 15px;
-      margin-top: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    @keyframes pop {
-      0% { transform: scale(0.5); opacity: 0; }
-      100% { transform: scale(1); opacity: 1; }
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+  <title>Ucapan Ultah Buat Kamu</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <div class="container" id="page1">
     <h1>Haii cantikk</h1>
     <p>Klik tombol di bawah ini yaa</p>
@@ -73,19 +14,24 @@
   </div>
 
   <div class="container second-page" id="page2">
-    <h1>Selamat Ulang Tahun</h1>
-    <p>Semoga panjang umur, sehat selalu, dan makin cantik yaa</p>
-    <img src="WhatsApp%20Image%202025-08-04%20at%2021.26.03_4c1c0101.jpg" alt="Foto Ultah">
+    <h1>Selamat Ulang Tahunnn 🥳</h1>
+    <p>
+      Semoga di umur baruu ini kamu makin kuat, makin bahagia,<br>
+      dan makin deket sama semua impian kamu.<br><br>
+
+      Jangan pernah ragu sama dirimu, kamu itu hebat<br>
+      dan berhak buat bahagia setiap harii 🌈<br><br>
+
+      Tetap semangat yaa, apapun yang kamu jalanin sekarang.<br>
+      Hari ini harimu, jadi senyumin dunia seluas-luasnya 😄<br><br>
+
+      Selamat ulang tahunnn, semoga semua doa baik nyampe ke kamu 🎐✨
+    </p>
+    <img src="foto.jpg" alt="Foto Cewe Ultah">
   </div>
 
-  <script>
-    function nextPage() {
-      document.getElementById("page1").style.display = "none";
-      document.getElementById("page2").style.display = "flex";
-    }
-  </script>
+  <audio id="bgMusic" src="lagu.mp3" loop></audio>
 
+  <script src="script.js"></script>
 </body>
 </html>
-
-
