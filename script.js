@@ -1,10 +1,15 @@
-function lanjut() {
-  const nama = document.getElementById('namaInput').value;
-  if (!nama) {
-    alert("Masukin nama dulu dong 😢");
-    return;
+function showLove() {
+  const loveRain = document.getElementById('loveRain');
+  for (let i = 0; i < 20; i++) {
+    const heart = document.createElement('div');
+    heart.className = 'falling-heart';
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDuration = (Math.random() * 2 + 3) + 's';
+    heart.innerText = '💖';
+    loveRain.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 5000);
   }
-  document.getElementById('halaman1').classList.add('hidden');
-  document.getElementById('halaman2').classList.remove('hidden');
-  document.getElementById('namaOutput').innerText = nama;
 }
