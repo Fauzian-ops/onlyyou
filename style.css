@@ -1,80 +1,66 @@
 body {
-  font-family: 'Indie Flower', cursive;
-  background: linear-gradient(135deg, #ffd1dc, #ffe6f0);
-  margin: 0;
-  padding: 0;
+  font-family: 'Comic Neue', cursive;
+  background: linear-gradient(to top right, #ffe6f0, #d0f0ff);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  overflow: hidden;
-  animation: bgMove 10s infinite alternate;
+  min-height: 100vh;
+  margin: 0;
 }
 
-@keyframes bgMove {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-
-.card {
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  max-width: 400px;
   text-align: center;
-  background: #fff5fa;
-  border-radius: 20px;
-  padding: 25px;
-  width: 90%;
-  max-width: 340px;
-  box-shadow: 0 5px 20px rgba(255, 128, 171, 0.5);
-  animation: fadeIn 1.2s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-h1 {
-  font-size: 22px;
-  color: #ff69b4;
-  margin-bottom: 10px;
+  animation: fadeIn 1.2s ease;
 }
 
 input {
   padding: 10px;
-  border-radius: 12px;
-  border: 1px solid #ffc1d9;
+  font-size: 16px;
   width: 80%;
   margin-top: 10px;
-  font-family: 'Indie Flower', cursive;
+  border: 2px solid #ffc0cb;
+  border-radius: 12px;
 }
 
 button {
   margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #ff80ab;
+  padding: 10px 25px;
+  background-color: #ff99cc;
+  color: white;
+  font-weight: bold;
   border: none;
   border-radius: 15px;
-  color: white;
-  font-size: 16px;
   cursor: pointer;
+  font-family: 'Fredoka One', cursive;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
 }
 
 .hidden {
   display: none;
 }
 
-.emoji {
-  font-size: 36px;
-  margin-bottom: 10px;
-  animation: bounce 1s infinite;
+h1, h2 {
+  color: #ff3399;
+  font-family: 'Fredoka One', cursive;
 }
 
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+.gambar-cewe {
+  width: 150px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 15px;
 }
 
-.text {
-  font-size: 16px;
-  color: #d63384;
-  margin-top: 15px;
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
 }
