@@ -2,29 +2,28 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🎂 Kartu Ulang Tahun Lucu 🎀</title>
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ucapan Ultah Lucuu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="card" id="page1">
-    <div class="emoji">🐰🍓✨</div>
-    <h1>Haiii, siapa nih yang ultah? 🎉</h1>
-    <input type="text" id="nama" placeholder="Masukin nama kamu yaa~" />
-    <br />
-    <button onclick="lanjutUlangTahun()">Lanjut 🎀</button>
-  </div>
+  <div class="container">
+    <div id="halaman1" class="halaman">
+      <h2>Masukin nama kamu dulu dong </h2>
+      <input type="text" id="namaInput" placeholder="Nama kamu..." />
+      <button onclick="lanjut()">Lanjut yukk</button>
+    </div>
 
-  <div class="card hidden" id="page2">
-    <div class="emoji">🎂💖🎁</div>
-    <h1 id="ucapan"></h1>
-    <p class="text">
-      Selamat ulang tahunnn <span id="namaKamu"></span> cantik 🥰<br>
-      Hari ini dunia jadi lebih gemes karena kamu bertambah umur!<br>
-      Semoga makin glowing, makin lucu, makin disayang semestaa 💫
-    </p>
-    <div class="emoji">🧁🌈🐱</div>
+    <div id="halaman2" class="halaman hidden">
+      <img src="https://i.imgur.com/sNR0I4f.png" alt="Cewe Lucu" class="gambar-cewe" />
+      <h1>Happy Birthday <span id="namaOutput"></span> 🎂🎉</h1>
+      <p>
+        Semogaaa makin cantikkk, makin gemesin, makin disayang semestaa 💖  
+        Jangan lupa bahagia terusss dan makan kue banyak hari ini yaaa 🍰🥳  
+        Kamu spesial banget lhooo 😚
+      </p>
+    </div>
   </div>
 
   <script src="script.js"></script>
